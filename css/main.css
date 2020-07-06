@@ -1,0 +1,116 @@
+
+/* header background */
+.info{
+    background-color: darkorange;
+}
+
+/* background image */
+#header{
+    background-image: url("../img/hero_1.jpg");
+    min-height: 85vh;
+    background-attachment: fixed;
+}
+
+/* sushi animation */
+@keyframes fromleft{
+    0%{
+        transform: translateX(-20%);
+        opacity: 0; 
+    }
+}
+
+.banner p{
+    animation: fromleft;
+    animation-duration: 4s;   
+}
+
+/* order animation */
+#order {
+    animation: fromRight;
+    animation-duration: 4s;
+}
+
+@keyframes fromRight{
+    0%{
+        transform: translateX(20);
+        opacity: 0; 
+    } 
+}
+
+/* dish background image  */
+#image{
+    background-image: url('../img/about_2.jpg');
+    min-height: 85vh;
+    background-attachment: fixed;
+}
+
+/* dish images  */
+.item-image:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* menu background image */
+#menu-background{
+    background-image: url('../img/hero_1.jpg');
+    background-attachment: fixed;
+}
+
+/* menu items border */
+.borders{
+    border: 1px solid greenyellow;
+   
+}
+
+/*positioning the about image  */
+
+.img-1{
+    position: relative;
+    top: 100px;
+    left: 30px;
+}
+.img-3{
+    position: relative;
+    top: 100px;
+    left: 0px;
+}
+.img-5{
+    position: relative;
+    top: 100px;
+    left: -30px;
+}
+
+/* hover effect for about image */
+.img-1:hover{
+    transform: scale(1.1);
+    border: 2px solid greenyellow;
+}
+.img-2:hover{
+    transform: scale(1.1);
+    border: 2px solid greenyellow;
+}
+.img-3:hover{
+    transform: scale(1.1);
+    border: 2px solid greenyellow;
+}
+.img-4:hover{
+    transform: scale(1.1);
+    border: 2px solid greenyellow;
+}
+
+/* for customer review image */
+.review-img{
+    height: 200px;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+

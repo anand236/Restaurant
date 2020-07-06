@@ -1,0 +1,581 @@
+<html>
+
+<head>
+    <title>Restaurent</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- font awesome link -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container-fluid">
+        <div class="info d-flex justify-content-between">
+            <div class="info-icon p-3 ">
+                <a href="#"><i class="fab fa-facebook fa-2x ml-2 "></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x  ml-2"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x ml-2"></i></a>
+                <a href="#"><i class="fab fa-youtube fa-2x ml-2 "></i></a>
+            </div>
+            
+            <div>
+                <h3 class="p-3 text-capitalize ">ABC Restaurent</h3>
+            </div>
+        </div>
+
+        <!-- below header -->
+        <header id='header'>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col banner">
+                        <p class="text-center display-1"><span
+                                style="border-bottom: 5px dashed chartreuse ;">sushi</span> </p>
+                        <p class="text-capitalize display-1 text-center text-primary" style="font-size: 120px;"><span
+                                style="border-bottom: 5px dashed chartreuse ;">monster</span></p>
+                        <div class="  d-flex justify-content-center">
+                            <a id='order' role='button' class="btn btn-primary mt-5 text-capitalize p-2" 
+                            data-toggle="modal" data-target = '#modalPopup'>order now</a>
+                        </div>
+                        <div class=" d-flex justify-content-center">
+                            <a href="#nav" class="btn btn-primary mt-5"'><i class="fas fa-arrow-down p-1" ></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- menu navbar  -->
+        <nav id='nav' class="navbar navbar-expand-lg navbar-light bg-dark mt-2">
+            <span class="navbar-brand h1 text-white">ABC Restaurent</span>
+            <button class="navbar-toggler">
+                <div class="toggler-btn">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+            </button>
+                <ul class="navbar-nav">
+                    <li class="nav-link">
+                        <a href="" class="nav-item text-white">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#order-menu" class="nav-item text-white">Order Menu</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#feedback" class="nav-item text-white">feedback</a>
+                    </li>               
+                </ul>
+        </nav>
+
+        <!-- dishesh img -->
+
+        <div class="container-fluid " id='image'>
+            <div class="row mx-auto">
+                <div class="col-xs-12 col-sm-6 col-lg-3 py-2 item-image">
+
+                    <img src="./img/dishes_1.jpg" height="450px" width="300px" alt="">
+                    <p class="display-4">sushi</p>
+
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-lg-3 py-2 item-image">
+
+                    <img src="./img/dishes_2.jpg" height="450px" width="300px" alt="">
+                    <p class="display-4">Noodles</p>
+
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 py-2 item-image">
+
+                    <img src="./img/dishes_3.jpg" height="450px" width="300px" alt="">
+                    <p class="display-4">Maggie</p>
+
+                </div>
+                <div class="col-xs-12  col-sm-6 col-lg-3 py-2 item-image">
+
+                    <img src="./img/dishes_4.jpg" height="450px" width="300px" alt="">
+                    <p class="display-4">palaav</p>
+
+                </div>
+                <div class="col-xs-12  col-sm-6 col-lg-3 py-2 item-image">
+
+                    <img src="./img/dishes_4.jpg" height="450px" width="300px" alt="">
+                    <p class="display-4">soup</p>
+
+                </div>
+                <div class="col-xs-12  col-sm-6 col-lg-3 py-2 item-image">
+
+                    <img src="./img/dishes_3.jpg" height="450px" width="300px" alt="">
+                    <p class="display-4">Fried Rice</p>
+
+                </div>
+                <div class="col-xs-12  col-sm-6 col-lg-3 py-2 item-image">
+
+                    <img src="./img/dishes_2.jpg" height="450px" width="300px" alt="">
+                    <p class="display-4">chicken gravy</p>
+
+                </div>
+                <div class="col-xs-12  col-sm-6 col-lg-3 py-2 item-image">
+
+                    <img src="./img/dishes_1.jpg" height="450px" width="300px" alt="">
+                    <p class="display-4">curry</p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- order Menu -->
+        <div class="container-fluid pt-2" id='order-menu'>
+            <div class="row  d-flex justify-content-center mb-2"
+                style="background-color: grey;">
+                <p class="display-4 ">Order Menu</p>
+            </div>
+            <div class="row " id='menu-background'>
+                <div class="col-lg-6 py-3 borders" style="background-color: chartreuse;">
+                        <p class="display-4 text-white">sushi</p>
+                        <p class="display-4 text-white" style="float: right;">150/-</p>
+                </div>
+                <div class="col-lg-6 py-3 borders">
+                    <p class="display-4 text-white">Noodles</p>
+                    <p class="display-4 text-white" style="float: right;">100/-</p>
+                </div>
+                <div class="col-lg-6 py-3 borders">
+                    <p class="display-4 text-white">Maggie</p>
+                    <p class="display-4 text-white" style="float: right;">80/-</p>
+                </div>
+                <div class="col-lg-6 py-3 borders" style="background-color: chartreuse;">
+                    <p class="display-4 text-white">soup</p>
+                    <p class="display-4 text-white" style="float: right;">120/-</p>
+                </div>
+                <div class="col-lg-6 py-3 borders" style="background-color: chartreuse;">
+                    <p class="display-4 text-white">curry</p>
+                    <p class="display-4 text-white" style="float: right;">150/-</p>
+                </div>
+                <div class="col-lg-6 py-3 borders">
+                    <p class="display-4 text-white">Fried Rice</p>
+                    <p class="display-4 text-white" style="float: right;">140/-</p>
+                </div>
+                <div class="col-lg-6 py-3 borders">
+                    <p class="display-4 text-white">chicken gravy</p>
+                    <p class="display-4 text-white" style="float: right;">200/-</p>
+                </div>
+                <div class="col-lg-6 py-3 borders" style="background-color: chartreuse;">
+                    <p class="display-4 text-white">palaav</p>
+                    <p class="display-4 text-white" style="float: right;">200/-</p>
+                </div>
+            </div>
+        </div>
+
+                                
+        <!-- about us -->
+
+        <section class="py-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-7">
+                        <p class="display-2">ABOUT US</p>
+                        <p>An enterprise of Select Group with interests in core Hospitality,
+                            Travel and Retail, amongst others, Select Hotels owns and operates
+                            two chic urban resorts in the country offering superlative
+                            experiences
+                            and one boutique hotel located in a quaint neighbourhood of New
+                            Delhi offering
+                            superior experiences for corporate ...
+                            An enterprise of Select Group with interests in core Hospitality,
+                            Travel and Retail, amongst others, Select Hotels owns and operates
+                            two chic urban resorts in the country offering superlative
+                            experiences
+                            and one boutique hotel located in a quaint neighbourhood of New
+                            Delhi offering
+                            superior experiences for corporate ...</p>
+                    </div>
+                    <div class="col-md-5 col-xs-12   ">
+                        <img src="./img/dishes_1.jpg" class="img-1 img-thumbnail about-img"
+                            height="150px" width="100px" alt="">
+                        <img src="./img/dishes_2.jpg" class="img-2 img-thumbnail about-img"
+                            height="150px" width="100px" alt="">
+                        <img src="./img/dishes_3.jpg" class="img-3 img-thumbnail about-img"
+                            height="150px" width="100px" alt="">
+                        <img src="./img/dishes_4.jpg" class="img-4 img-thumbnail about-img"
+                            height="150px" width="100px" alt="">
+                        <!-- <img src="./img/dishes_5.jpg" class="img-5 img-thumbnail about-img" height="150px" width="100px"alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- carousel -->
+        <section>
+            <div class="container-fluid">
+                <p class="display-4 mt-5">Our Customer Reviews</p>
+                <div id="carouselExampleControls" class="carousel slide bg-dark"
+                    data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row ml-2">
+                                <img src="./img/person_1.jpg"
+                                    class=" review-img p-2 m-2 img-thumbnail " alt="...">
+                                <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                                    <p class="display-2 ml-3 text-white">sana</p>
+                                    <p class=" text-white ml-5">Had a brilliant stay. Cannot
+                                        fault hotel. It was clean, in a good location,
+                                        served a great breakfast and the staff were extremely
+                                        helpful. Would definitely recommend
+                                        and would certainly stay here againHad a brilliant stay.
+                                        Cannot fault hotel. It was clean, in a good location,
+                                        served a great breakfast and the staff were extremely
+                                        helpful. Would definitely recommend
+                                        and would certainly stay here again</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class=" row ml-2">
+                                <img src="./img/person_2.jpg"
+                                    class="review-img p-2 m-2 img-thumbnail " alt="...">
+                                <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                                    <p class="display-2 ml-3 text-white">lana</p>
+                                    <p class=" text-white ml-5">Had a brilliant stay. Cannot
+                                        fault hotel. It was clean, in a good location,
+                                        served a great breakfast and the staff were extremely
+                                        helpful. Would definitely recommend
+                                        and would certainly stay here againHad a brilliant stay.
+                                        Cannot fault hotel. It was clean, in a good location,
+                                        served a great breakfast and the staff were extremely
+                                        helpful. Would definitely recommend
+                                        and would certainly stay here again</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" carousel-item">
+                            <div class="row ml-2">
+                                <img src="./img/person_3.jpg"
+                                    class=" review-img p-2 m-2 img-thumbnail " alt="...">
+                                <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                                    <p class="display-2 ml-3 text-white">moana</p>
+                                    <p class=" text-white ml-5 ">Had a brilliant stay. Cannot
+                                        fault hotel. It was clean, in a good location,
+                                        served a great breakfast and the staff were extremely
+                                        helpful. Would definitely recommend
+                                        and would certainly stay here againHad a brilliant stay.
+                                        Cannot fault hotel. It was clean, in a good location,
+                                        served a great breakfast and the staff were extremely
+                                        helpful. Would definitely recommend
+                                        and would certainly stay here again</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls"
+                        role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only text-dark">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls"
+                        role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only text-dark">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section> 
+        
+        <!-- team chef -->
+        <section id='team' class="m-4">
+            <div class="">
+                <p class="display-4">Team Members</p>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="card card-img col-9 col-sm-6 col-lg-4 ">
+                        <img src="./img/1.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>Team Member</h1>
+                            </div>
+                            <h4>chef</h4>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <a href="#"><i class="fab fa-facebook fa-2x ml-2 "></i></a>
+                            <a href="#"><i class="fab fa-instagram fa-2x  ml-2"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-2x ml-2"></i></a>
+                            <a href="#"><i class="fab fa-youtube fa-2x ml-2 "></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card card-img col-9 col-sm-6 col-lg-4 ">
+                        <img src="./img/2.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>Team Member</h1>
+                            </div>
+                            <h4>chef</h4>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <a href="#"><i class="fab fa-facebook fa-2x ml-2 "></i></a>
+                            <a href="#"><i class="fab fa-instagram fa-2x  ml-2"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-2x ml-2"></i></a>
+                            <a href="#"><i class="fab fa-youtube fa-2x ml-2 "></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card card-img col-9  col-sm-6 col-lg-4 ">
+                        <img src="./img/3.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>Team Member</h1>
+                            </div>
+                            <h4>chef</h4>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <a href="#"><i class="fab fa-facebook fa-2x ml-2 "></i></a>
+                            <a href="#"><i class="fab fa-instagram fa-2x  ml-2"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-2x ml-2"></i></a>
+                            <a href="#"><i class="fab fa-youtube fa-2x ml-2 "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid bg-dark" id='feedback'>
+                <div class="row">
+                    <div class="col-md-6 align-self-center">
+                        <h1 class="text-white">Our Location</h1>
+                        <div class="embed-responsive embed-responsive-21by9 height-60" >
+                            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.88653999008!2d77.4908528388935!3d12.953959987220104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1593857503880!5m2!1sen!2sin" width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6 align-self-center">
+                        <div class="card-header" >
+                            <h1 class="text-white">Any Feedback</h1>
+                            <div class="card-body">
+                                <input type="text" class="form-control" placeholder="Name">
+                                <input type="text" class="form-control mt-3" placeholder="Email">
+                                <textarea class="form-control mt-3 text-white" >Any Feedback </textarea>
+                                <div class="row d-flex justify-content-between">
+                                    <button class="btn btn-primary mt-3 ml-3 text-white">Submit</button>
+                                    <h4 class="mr-3 mt-3 text-white">contact us at: +91919191919</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+            Launch demo modal
+        </button> -->
+  
+        <!-- Modal -->
+        <div class="modal fade" id="modalPopup"  >
+            <div class="modal-dialog modal-lg" >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-capitalize">Todays Dish please choose your order</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-dark table-hover text-center table-responsive-lg table-responsive-sm">
+                      <thead>
+                        <tr>
+                            <td>Dish</td>
+                            <td>Price</td>
+                            <td>quantity</td>
+                            <td>Total</td>
+                            <td>Done</td>
+                            <td>Remove</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                            <td>Sushi</td>
+                            <td><p class="text-white">150/-</p></td>
+                            <td><input id='isushi' type="number" min="0" placeholder="0" style="border-radius: 10px;" ></td>
+                            <td><p class="text-white" id='sushi'>0</p></td>
+                            <td><button  onclick="bsushi()" class="btn btn-primary">Done</button></td>
+                            <td><button class="btn btn-danger"onclick="rsushi()" >Remove</button></td>  
+                          </tr>
+                          <tr>
+                            <td>Noodles</td>
+                            <td><p class="text-white">100/-</p></td>
+                            <td><input id='inoodles' type="number" min="0"  placeholder="0" style="border-radius: 10px;" ></td>
+                            <td><p id='noodles'>0</p></td>
+                            <td><button id='bnoodles' onclick="bnoodles()" class="btn btn-primary">Done</button></td>
+                            <td><button class="btn btn-danger" onclick="rnoodles()" >Remove</button></td>  
+                          </tr>
+                          <tr>
+                            <td>Maggie</td>
+                            <td><p class="text-white">80/-</p></td>
+                            <td><input id='imaggie' type="number" min="0"placeholder="0" style="border-radius: 10px;" ></td>
+                            <td><p id='maggie'>0</p></td>
+                            <td><button id='bmaggie' onclick="bmaggie()" class="btn btn-primary">Done</button></td>
+                            <td><button class="btn btn-danger" onclick="rmaggie()">Remove</button></td>  
+                          </tr>
+                          <tr>
+                            <td>Soup</td>
+                            <td><p class="text-white">120/-</p></td>
+                            <td><input id='isoup' type="number" min="0"placeholder="0" style="border-radius: 10px;" ></td>
+                            <td><p id='soup'>0</p></td>
+                            <td><button id='bsoup' onclick="bsoup()" class="btn btn-primary">Done</button></td>
+                            <td><button class="btn btn-danger" onclick="rsoup()">Remove</button></td>  
+                          </tr>
+                          <tr>
+                            <td>curry</td>
+                            <td><p class="text-white">150/-</p></td>
+                            <td><input id='icurry' type="number" min="0"placeholder="0" style="border-radius: 10px;" ></td>
+                            <td><p id='curry'>0</p></td>
+                            <td><button id='bcurry' onclick="bcurry()" class="btn btn-primary">Done</button></td>
+                            <td><button class="btn btn-danger" onclick="rcurry()" >Remove</button></td>  
+                          </tr>
+                          <tr>
+                            <td>Fried Rice</td>
+                            <td><p class="text-white">140/-</p></td>
+                            <td><input id='ifriedRice' type="number" min="0"placeholder="0" style="border-radius: 10px;" ></td>
+                            <td><p id='friedRice'>0</p></td>
+                            <td><button id='bfriedRice' onclick="bfriedRice()" class="btn btn-primary">Done</button></td>
+                            <td><button class="btn btn-danger"onclick="rfriedRice()">Remove</button></td>  
+                          </tr>
+                          <tr>
+                            <td>Chicken gravy</td>
+                            <td><p class="text-white">200/-</p></td>
+                            <td><input id='ichickenGravy'placeholder="0" min="0" type="number" style="border-radius: 10px;" ></td>
+                            <td><p id='chickenGravy'>0</p></td>
+                            <td><button id='bchickenGravy' onclick="bchickenGravy()" class="btn btn-primary">Done</button></td>
+                            <td><button class="btn btn-danger" onclick="rchickenGravy()">Remove</button></td>  
+                          </tr>
+                          <tr>
+                            <td>Palaav</td>
+                            <td><p class="text-white">200/-</p></td>
+                            <td><input id='ipalaav'placeholder="0" type="number" min="0" style="border-radius: 10px;" ></td>
+                            <td><p id='palaav'>0</p></td>
+                            <td><button id='bpalaav' onclick="bpalaav()" class="btn btn-primary">Done</button></td>
+                            <td><button class="btn btn-danger"onclick="rpalaav()">Remove</button></td>  
+                          </tr>
+                      </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                  <button type="button" class="btn btn-primary" id='negative'  onclick="proceed()">Proceed</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- modal order now popup -->
+
+
+          <!-- Modal -->
+        <div class="modal fade" id="Proceed">
+            <div class="modal-dialog modal-lg "  >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-capitalize">Your Order details</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Your total bill is</h3>
+                    <p class="display-4" id='totalPrice'></p>
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                  <button type="button" id='negative2' class="btn btn-primary" data-toggle="modal"onclick = 'resetDelivaryData()' data-target="#orderModal">proceed</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- modal order now popup -->
+
+
+          <!-- Modal -->
+        <div class="modal fade" id="orderModal">
+            <div class="modal-dialog modal-lg " >
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title text-capitalize" >Cash On Delivery (COD)</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <label >Name</label>
+                            <input type="text"id='name' style="border:2px solid chartreuse;" class="form-control">
+                        </div>
+                        <div>
+                            <label >Mobile No.</label>
+                            <input type="number" id='mobile' style="border:2px solid chartreuse;" class="form-control">
+                        </div>
+                        <div>
+                           <div> <label>Adrress</label></div>
+                            <textarea id='text'  cols="100" rows="10" class="form-control" style='border:2px solid chartreuse;border-radius: 10px;'></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>  -->
+                        <button type="button" class="btn btn-primary" id='finalOrderBtn' onclick="final()">order now</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- final order message -->
+        <div class="modal fade" id="finalOrder" >
+            <div class="modal-dialog modal-lg ">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-capitalize" >Thank You</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Your order successfully has been placed</h3>
+                    <p class="display-4" id='totalPrice'></p>
+                </div>
+                <!-- <div class="modal-footer"> -->
+                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                  <!-- <button type="button" id='negative2' class="btn btn-primary" data-toggle="modal" data-target="#orderModal"></button>proceed</button> -->
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+
+          
+              <div class="d-flex bg-dark mt-2 justify-content-center">
+                  <h3 class="py-3 text-white">CopyRight @1999 </h3>
+              </div>
+        
+    </div>
+
+    
+
+
+    <script src='js/jquery.min.js'></script>
+    <script src='js/bootstrap.bundle.min.js'></script> 
+    <script src='./js/script.js'></script>                   
+</body>
+
+</html>
